@@ -6,7 +6,8 @@ from utils import *
 from streamlit_extras.switch_page_button import switch_page
 import json
 
- 
+ st.set_page_config(layout="wide")
+
 
  
 
