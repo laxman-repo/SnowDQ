@@ -147,7 +147,7 @@ def html(df_dot,index):
                 st.experimental_rerun()
 
 
-
+has context menu
 def buttons():
     button_style = """
     <style>
