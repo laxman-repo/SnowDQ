@@ -8,8 +8,6 @@ from statistics import mean
 from streamlit_modal import Modal
 from streamlit_extras.stylable_container import stylable_container
 
-st.set_page_config(layout="wide")
-
 st.set_page_config(page_title="SnowDQ", page_icon="static/favicon.ico", layout="wide", initial_sidebar_state="collapsed")
 navWithLogo()
 # col1, col2 = st.columns((1,8))
