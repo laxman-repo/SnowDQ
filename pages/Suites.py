@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-from streamlit_option_menu import option_menu
 from snowflake_client import load_data
 from utils import *
 from streamlit_extras.switch_page_button import switch_page
