@@ -102,10 +102,6 @@ def suite_rule_background(text):
     """
     st.markdown(suite_rule_background,unsafe_allow_html=True)
 
-
-
-
-
 def html(df_dot,index):
     with stylable_container(
                     key="container_with_border",
@@ -146,8 +142,6 @@ def html(df_dot,index):
                 st.session_state['button']  = False
                 st.experimental_rerun()
 
-
-has context menu
 def buttons():
     button_style = """
     <style>
