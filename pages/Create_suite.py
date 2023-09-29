@@ -93,16 +93,41 @@ with colb:
           
 
 
-if st.button("save"):
-    print("expectation_data",expectation_data)
-    # str_json = json.dumps(expectation_data["ARGS"])
-    issuite = create_suite(suitename, description, tags)
+# if st.button("save"):
+#     print("expectation_data",expectation_data)
+#     # str_json = json.dumps(expectation_data["ARGS"])
+#     issuite = create_suite(suitename, description, tags)
     
-    groupId = issuite[0].ID
-    add_rules(groupId, expectation_data)
-    st.success("Successfully Created Suite")
-    st.cache_data.clear()
-    switch_page('Suites')
+#     groupId = issuite[0].ID
+#     add_rules(groupId, expectation_data)
+#     st.success("Successfully Created Suite")
+#     st.cache_data.clear()
+#     switch_page('Suites')
+col1,col2,col3,col4,col5,col6= st.columns([1,1,1,1,0.8,0.5])
+with col1:
+    pass
+with col2:
+    pass
+with col3:
+    pass
+with col4:
+    pass
+with col5:
+    if st.button("save"):
+        print("expectation_data",expectation_data)
+        # str_json = json.dumps(expectation_data["ARGS"])
+        issuite = create_suite(suitename, description, tags)
+        
+        groupId = issuite[0].ID
+        add_rules(groupId, expectation_data)
+        st.success("Successfully Created Suite")
+        st.cache_data.clear()
+        switch_page('Suites')
+with col6:
+    if st.button("cancel"):
+        st.cache_data.clear()
+        switch_page('suites')
+
 
 
 def remove_rule(index):  
