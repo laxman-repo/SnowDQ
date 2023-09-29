@@ -1,2 +1,7 @@
 streamlit==1.26.0
 snowflake-connector-python==3.0.3
+pandas
+pyarrow==10.0.1
+streamlit-extras
+streamlit-modal
+snowflake-snowpark-python
