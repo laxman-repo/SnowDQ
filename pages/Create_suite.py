@@ -4,7 +4,6 @@ import streamlit as st
 from streamlit_extras.switch_page_button import switch_page
 import streamlit as st
 import pandas as pd
-from streamlit_option_menu import option_menu
 from streamlit_extras.switch_page_button import switch_page
 import json
 
