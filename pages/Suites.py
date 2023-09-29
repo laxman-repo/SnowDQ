@@ -61,7 +61,7 @@ for index, row in page_data.iterrows():
     with col4:
         st.write("Applied Rules")
         appliedRulesDf = suiteRulesDf[suiteRulesDf["GROUP_ID"]== page_data['ID'][index]]
-        appliedRules = appliedRulesDf["RULE"].tolist()
+        appliedRules = appliedRulesDf["rule"].tolist()
         if appliedRules:
             suite_rule_background(appliedRules[0])
             if len(appliedRules) > 1:
