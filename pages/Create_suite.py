@@ -10,7 +10,7 @@ import json
 
 from snowflake_client import *
 from utils import *
-
+st.set_page_config(layout="wide")
 expectationsDf = load_data(st.secrets.DQ_TABLE.EXPECTATIONS)
 items_per_page = 10
 st.session_state.page =1
