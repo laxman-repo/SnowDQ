@@ -10,6 +10,7 @@ from streamlit_extras.stylable_container import stylable_container
 
 st.set_page_config(page_title="SnowDQ", page_icon="static/favicon.ico", layout="wide", initial_sidebar_state="collapsed")
 navWithLogo()
+
 # col1, col2 = st.columns((1,8))
 # with col1:
 #     pass
